@@ -1,25 +1,27 @@
 
-package engine;
+package practical;
 import java.util.Scanner;
 public class Engine {
-    private int pow=0;
-    private String des="";
-    public Engine()
-    { }
-    public Engine (String des, int pow)
-    {   this.des=des;
-        this.pow=pow;
+    String designer;
+    int power;
+    public Engine(){}
+
+    public Engine(String designer, int power) {
+        this.designer = designer;
+        this.power = power;
     }
-    public String getDesigner ()
-    { 
-        char c1=Character.toLowerCase(des.charAt(0));
-        String name=String.valueOf(c1);
-        name=name+des.charAt(1)+des.charAt(2);
-        return name; 
+
+    public String getDesigner() {
+        char c1=Character.toLowerCase(designer.charAt(0));
+        return String.valueOf(c1)+designer.charAt(1)+designer.charAt(2);
     }
-    public int getPower(){ return pow; }
-    public void setPower(int pow){
-        this.pow=pow;
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
     }
     public static void main(String[] args) {
         boolean c;

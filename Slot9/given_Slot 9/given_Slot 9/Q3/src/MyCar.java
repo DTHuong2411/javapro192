@@ -1,4 +1,4 @@
 
-public class MyCar {
+public interf MyCar {
     
 }
